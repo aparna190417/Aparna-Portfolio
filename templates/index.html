@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<!-- PROFILE IMAGE --> 
+
+<section class="section-container hero">
+
+<h1 class="portfolio-title">MY PORTFOLIO</h1>
+
+<img src="{{ url_for('static', filename='profile.jpg') }}" class="profile-pic">
+
+<h1>Hello, I'm Aparna Patel 👋</h1>
+
+<p class="tagline">Python Developer | Data Analyst</p>
+
+        <div class="tech-stack">
+
+            <h3>Tech Stack</h3>
+
+            <p>
+            Programming: Python<br>
+            Data Analysis: Pandas, NumPy<br>
+            Machine Learning: Scikit-learn<br>
+            Visualization: Matplotlib, Seaborn<br>
+            BI Tools: Power BI, Tableau<br>
+            Web: Flask, HTML, CSS<br>
+            Tools: GitHub, VS Code, Jupyter
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-right">
+
+        <p>
+        Python Developer and Data Analyst with hands-on experience building end-to-end
+        data analytics and machine learning projects. Skilled in Python programming,
+        backend development using Flask, data analysis, and creating interactive dashboards
+        that transform raw datasets into meaningful insights.
+        </p>
+
+        <div class="buttons">
+
+            <a href="/python-projects" class="btn">View Projects</a>
+
+            <a href="https://github.com/aparna190417" class="btn">GitHub Profile</a>
+
+            <a href="{{ url_for('static', filename='Aparna_Patel_Resume.pdf') }}" class="btn">Download Resume</a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- PROJECTS -->
+
+<section id="projects" class="projects">
+
+<h2>Projects</h2>
+
+<p class="about">
+
+- Worked on data analysis using Python, Excel, Power BI, and Tableau.<br>
+- Built interactive dashboards and data reports using Power BI and Tableau to analyze datasets and visualize key metrics.<br>
+- Performed data cleaning, preprocessing, and exploratory data analysis (EDA) using Python libraries.<br>
+- Generated insights from datasets to support data-driven decision making.<br>
+- Used AI tools for coding assistance, automation, and data visualization<br>
+
+</p>
+
+<h3 class="project-category">Data Analytics Projects</h3>
+
+
+<div class="project-card">
+
+<h3>Netflix Data Analysis</h3>
+
+<p>
+Exploratory Data Analysis on Netflix dataset using Python,
+Pandas, Matplotlib and Seaborn.
+</p>
+
+</div>
+
+
+<div class="project-card">
+
+<h3>Customer Satisfaction Prediction</h3>
+
+<p>
+Machine Learning model built to predict customer satisfaction
+based on service and feedback data.
+</p>
+
+</div>
+
+
+<div class="project-card">
+
+<h3>Uber Trip Analysis using Machine Learning</h3>
+
+<p>
+Analyzed Uber trip dataset to understand ride demand patterns
+and trip behaviour.
+</p>
+
+</div>
+
+
+<div class="project-card">
+
+<h3>Data Analyst Job Market Analysis</h3>
+
+<p>
+Analyzed job datasets to understand skill demand
+and hiring trends for Data Analysts.
+</p>
+
+</div>
+
+
+<div class="project-card">
+
+<h3>Laptop Price Analysis and Prediction</h3>
+
+<p>
+Data analysis and ML model to predict laptop prices
+based on specifications.
+</p>
+
+</div>
+
+
+
+<!-- POWER BI DASHBOARDS -->
+
+<h3 class="project-category">Power BI Dashboards</h3>
+
+
+<div class="project-card">
+
+<h3>Netflix Dashboard</h3>
+
+<div class="dashboard-gallery">
+
+<img src="{{ url_for('static', filename='powerbi/netflix_dashboard/Netflix_dashboard.png') }}">
+
+</div>
+</div>
+
+<div class="project-card">
+
+<h3>Customer Dashboard</h3>
+
+<div class="dashboard-gallery">
+
+<img src="{{ url_for('static', filename='powerbi/customer_dashboard/Overview.png') }}">
+<img src="{{ url_for('static', filename='powerbi/customer_dashboard/Tickets.png') }}">
+<img src="{{ url_for('static', filename='powerbi/customer_dashboard/ML_Performance.png') }}">
+<img src="{{ url_for('static', filename='powerbi/customer_dashboard/Data_Health.png') }}">
+<img src="{{ url_for('static', filename='powerbi/customer_dashboard/Prediction.png') }}">
+<img src="{{ url_for('static', filename='powerbi/customer_dashboard/Voice_Of_Customer.png') }}">
+
+</div>
+
+</div>
+
+
+<div class="project-card">
+
+<h3>Uber Trip Dashboard</h3>
+
+<div class="dashboard-gallery">
+
+<img src="{{ url_for('static', filename='powerbi/uber_dashboard/1_Overview.png') }}">
+<img src="{{ url_for('static', filename='powerbi/uber_dashboard/2_Base_Analysis.png') }}">
+<img src="{{ url_for('static', filename='powerbi/uber_dashboard/3_Prediction.png') }}">
+
+</div>
+
+</div>
+
+
+
+<!-- TABLEAU DASHBOARDS -->
+
+<div class="project-card">
+
+<h3>Data Analyst Job Analysis</h3>
+
+<div class="dashboard-gallery">
+
+<img src="{{ url_for('static', filename='tableau/Data_job_analysis/Overview.png') }}">
+<img src="{{ url_for('static', filename='tableau/Data_job_analysis/Salary_Prediction.png') }}">
+<img src="{{ url_for('static', filename='tableau/Data_job_analysis/Map.png') }}">
+
+</div>
+
+</div>
+
+
+<div class="project-card">
+
+<h3>Laptop Price Analysis</h3>
+
+<div class="dashboard-gallery">
+
+<img src="{{ url_for('static', filename='tableau/laptop_analysis/Overview.png') }}">
+<img src="{{ url_for('static', filename='tableau/laptop_analysis/Hardware_Analysis.png') }}">
+<img src="{{ url_for('static', filename='tableau/laptop_analysis/Price_Insights.png') }}">
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- CERTIFICATES -->
+
+<section id="certificates" class="certificates">
+
+<h2>Certificates</h2>
+
+
+<div class="certificate-card">
+
+<img src="{{ url_for('static', filename='certificates/tech_vidvan.jpg') }}">
+
+<h3>Python Programming Certificate</h3>
+
+</div>
+
+
+
+<div class="certificate-card">
+
+<img src="{{ url_for('static', filename='certificates/python_ai.jpg') }}">
+
+<h3>Python Using AI Workshop</h3>
+
+</div>
+
+
+
+<div class="certificate-card">
+
+<img src="{{ url_for('static', filename='certificates/excel_ai.jpg') }}">
+
+<h3>Excel Using AI Workshop</h3>
+
+</div>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+<h2>Contact Me</h2>
+
+
+<p>
+
+📧 Email:
+<a href="mailto:appuappi190417@gmail.com">
+appuappi190417@gmail.com
+</a>
+
+</p>
+
+
+<p>
+
+🔗 LinkedIn:
+<a href="https://www.linkedin.com/in/aparna-patel-08a389393"
+target="_blank">
+
+linkedin.com/in/aparna-patel-08a389393
+
+</a>
+
+</p>
+
+
+<p>📍 Location: New Delhi, India</p>
+
+
+</section>
+
+
+
+<footer class="footer">
+
+<p>© 2025 Aparna Patel | Python Developer & Data Analyst</p>
+
+</footer>
+
+
+</body>
+</html>
