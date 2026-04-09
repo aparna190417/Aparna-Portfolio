@@ -7,6 +7,10 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
+# Agar aapne certificates ke liye alag page rakha hai
+@app.route("/certificates")
+def certificates():
+    return render_template("certificates.html")
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
-
