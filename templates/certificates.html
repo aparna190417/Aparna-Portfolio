@@ -1,35 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Certificates</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Certificates | Aparna Patel</title>
 
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
 
 <body>
 
-<h1>My Certificates</h1>
+<!-- NAVBAR -->
 
-<div class="certificate-card">
-<img src="{{ url_for('static', filename='certificates/tech_vidvan.jpg') }}">
-<h3>Python Programming Certificate</h3>
+<nav class="navbar">
+<div class="nav-content">
+<a href="/" class="nav-logo">APARNA</a>
+
+<div class="nav-links">
+<a href="/">Home</a>
+<a href="/projects">Projects</a>
+<a href="/certificates">Certificates</a>
+<a href="/#contact">Contact</a>
 </div>
 
-<div class="certificate-card">
+</div>
+</nav>
+
+
+<!-- CERTIFICATES -->
+
+<section class="section-container">
+
+<h1 class="section-title">My Certificates</h1>
+
+<div class="cert-grid">
+
+<!-- TechVidyan -->
+<div class="cert-item">
+<img src="{{ url_for('static', filename='certificates/tech_vidyan.jpg') }}">
+<p>Python Programming – TechVidyan</p>
+</div>
+
+<!-- Python AI -->
+<div class="cert-item">
 <img src="{{ url_for('static', filename='certificates/python_ai.jpg') }}">
-<h3>Python Using AI Workshop</h3>
+<p>Python Using AI – AI for Techies</p>
 </div>
 
-<div class="certificate-card">
-<img src="{{ url_for('static', filename='certificates/Excel_ai.jpg') }}">
-<h3>Excel Using AI Workshop</h3>
+<!-- Excel AI -->
+<div class="cert-item">
+<img src="{{ url_for('static', filename='certificates/excel_ai.jpg') }}">
+<p>Excel Using AI Workshop</p>
 </div>
 
-<div class="certificate-card">
+<!-- Internship -->
+<div class="cert-item">
 <img src="{{ url_for('static', filename='certificates/internship_certificate.jpg') }}">
-<h3>Data Analyst Internship Certificate</h3>
+<p>Data Analyst Internship – Unified Mentor</p>
 </div>
+
+</div>
+
+</section>
 
 </body>
 </html>

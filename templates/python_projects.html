@@ -1,82 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-<title>Python & Data Analytics Projects</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Projects | Aparna Patel</title>
 
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
 
 <body>
 
-<h1>Python & Data Analytics Projects</h1>
+<!-- NAVBAR -->
+
+<nav class="navbar">
+<div class="nav-content">
+<a href="/" class="nav-logo">APARNA</a>
+
+<div class="nav-links">
+<a href="/">Home</a>
+<a href="/projects">Projects</a>
+<a href="/certificates">Certificates</a>
+<a href="/#contact">Contact</a>
+</div>
+
+</div>
+</nav>
+
+
+<!-- PAGE TITLE -->
+
+<section class="section-container">
+
+<h1 class="section-title">My Projects</h1>
 
 
 <!-- PYTHON PROJECTS -->
 
 <h2>Python Projects</h2>
 
-<div class="project-card">
+<div class="project-grid">
 
+<div class="project-card">
 <h3>Typing Speed Test</h3>
-
-<p>
-Python application that measures typing speed and accuracy.
-Built using Python logic and terminal interaction.
-</p>
-
+<p>Python application to measure typing speed and accuracy.</p>
 </div>
 
-
 <div class="project-card">
-
 <h3>To-Do List Manager</h3>
-
-<p>
-Command-line application for managing tasks.  
-Allows users to add, delete and track tasks efficiently.
-</p>
-
+<p>CLI-based task management system to organize daily tasks.</p>
 </div>
-
 
 <div class="project-card">
-
 <h3>Password Generator</h3>
-
-<p>
-Python tool to generate strong and secure passwords
-using randomization techniques.
-</p>
+<p>Secure password generator using Python randomization.</p>
+</div>
 
 </div>
 
 
-
-<!-- POWER BI DASHBOARDS -->
+<!-- POWER BI -->
 
 <h2>Power BI Dashboards</h2>
-
 
 <div class="project-card">
 
 <h3>Netflix Dashboard</h3>
 
-<img src="{{ url_for('static', filename='powerbi/netflix_dashboard/Netflix_dashboard.png') }}">
+<img src="{{ url_for('static', filename='powerbi/netflix_dashboard/Netflix_dashboard.png') }}" class="dashboard-preview">
 
 <p>
-Interactive Power BI dashboard analyzing Netflix content trends,
-genre distribution and global content growth.
+Interactive dashboard showing Netflix content trends, genres and global growth.
 </p>
 
 </div>
 
 
-
 <div class="project-card">
 
 <h3>Customer Analytics Dashboard</h3>
+
+<div class="dashboard-gallery">
 
 <img src="{{ url_for('static', filename='powerbi/customer_dashboard/Overview.png') }}">
 <img src="{{ url_for('static', filename='powerbi/customer_dashboard/Tickets.png') }}">
@@ -85,70 +92,76 @@ genre distribution and global content growth.
 <img src="{{ url_for('static', filename='powerbi/customer_dashboard/Prediction.png') }}">
 <img src="{{ url_for('static', filename='powerbi/customer_dashboard/Voice_Of_Customer.png') }}">
 
+</div>
+
 <p>
-Customer behavior and satisfaction analysis using Power BI dashboards
-with data insights and predictions.
+Customer insights dashboard analyzing behavior, satisfaction and predictions.
 </p>
 
 </div>
-
 
 
 <div class="project-card">
 
 <h3>Uber Trip Dashboard</h3>
 
+<div class="dashboard-gallery">
+
 <img src="{{ url_for('static', filename='powerbi/uber_dashboard/1_Overview.png') }}">
 <img src="{{ url_for('static', filename='powerbi/uber_dashboard/2_Base_Analysis.png') }}">
 <img src="{{ url_for('static', filename='powerbi/uber_dashboard/3_Prediction.png') }}">
 
+</div>
+
 <p>
-Power BI dashboard analyzing Uber trip patterns,
-ride demand trends and trip insights.
+Analysis of ride demand, trip patterns and predictions.
 </p>
 
 </div>
 
 
-
-<!-- TABLEAU DASHBOARDS -->
+<!-- TABLEAU -->
 
 <h2>Tableau Dashboards</h2>
 
-
 <div class="project-card">
 
-<h3>Data Analyst Job Market Analysis</h3>
+<h3>Data Analyst Job Market</h3>
+
+<div class="dashboard-gallery">
 
 <img src="{{ url_for('static', filename='tableau/Data_job_analysis/Overview.png') }}">
 <img src="{{ url_for('static', filename='tableau/Data_job_analysis/Salary_Prediction.png') }}">
 <img src="{{ url_for('static', filename='tableau/Data_job_analysis/Map.png') }}">
 
+</div>
+
 <p>
-Tableau dashboards analyzing job demand, salary trends
-and geographic distribution of data analyst jobs.
+Insights into job trends, salaries and locations for data analysts.
 </p>
 
 </div>
-
 
 
 <div class="project-card">
 
 <h3>Laptop Price Analysis</h3>
 
+<div class="dashboard-gallery">
+
 <img src="{{ url_for('static', filename='tableau/laptop_analysis/Overview.png') }}">
 <img src="{{ url_for('static', filename='tableau/laptop_analysis/Hardware_Analysis.png') }}">
 <img src="{{ url_for('static', filename='tableau/laptop_analysis/Price_Insights.png') }}">
 
+</div>
+
 <p>
-Tableau dashboards exploring laptop specifications,
-hardware impact and price insights.
+Analysis of laptop pricing trends based on specifications.
 </p>
 
 </div>
 
-
+</section>
 
 </body>
 </html>

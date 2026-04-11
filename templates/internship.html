@@ -1,39 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Data Analyst Internship</title>
+<title>Internship | Aparna Patel</title>
 
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
 
 <body>
 
-<h1>Data Analyst Internship</h1>
+<!-- NAVBAR -->
+
+<nav class="navbar">
+<div class="nav-content">
+<a href="/" class="nav-logo">APARNA</a>
+
+<div class="nav-links">
+<a href="/">Home</a>
+<a href="/projects">Projects</a>
+<a href="/certificates">Certificates</a>
+<a href="/#contact">Contact</a>
+</div>
+
+</div>
+</nav>
+
+
+<!-- INTERNSHIP SECTION -->
+
+<section class="section-container">
+
+<h1 class="section-title">Data Analyst Internship</h1>
+
+<div class="project-card">
+
+<h3>Unified Mentor Internship</h3>
 
 <p>
-
-Worked on real-world data analysis projects using Python,
-Excel, Power BI and Tableau.
-
+Completed a 3-month internship as a Data Analyst Intern at Unified Mentor.
+Worked on real-world datasets and developed analytical insights using Python and BI tools.
 </p>
+
+<ul>
+
+<li>Performed data cleaning and preprocessing using Pandas</li>
+
+<li>Conducted Exploratory Data Analysis (EDA)</li>
+
+<li>Built dashboards using Power BI and Tableau</li>
+
+<li>Worked with machine learning models for predictions</li>
+
+<li>Generated insights for business decision-making</li>
+
+</ul>
+
+</div>
+
+
+<div class="project-card">
+
+<h3>Key Skills Gained</h3>
 
 <p>
-
-Performed data cleaning, exploratory data analysis (EDA),
-and generated insights from datasets.
-
+Python • Data Analysis • Machine Learning • Power BI • Tableau • SQL • Data Visualization
 </p>
 
-<p>
+</div>
 
-Built interactive dashboards using Power BI and Tableau
-to visualize trends and business metrics.
 
-</p>
+<div class="buttons" style="text-align:center; margin-top:20px;">
+
+<a href="{{ url_for('static', filename='certificates/internship_certificate.jpg') }}" target="_blank" class="btn">
+View Certificate
+</a>
+
+</div>
+
+</section>
 
 </body>
-
 </html>
