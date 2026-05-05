@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Projects</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+<div class="max-w-6xl mx-auto p-6">
+
+<h1 class="text-3xl font-bold text-center mb-8">Dashboard Gallery</h1>
+
+<!-- ================= POWER BI ================= -->
+<h2 class="text-xl font-semibold text-center mb-6">Power BI Dashboards</h2>
+
+<div class="grid md:grid-cols-3 gap-6">
+
+<!-- CUSTOMER -->
+<div class="bg-white p-4 rounded-xl shadow text-center">
+<h3 class="font-semibold mb-2">Customer Satisfaction</h3>
+
+<img src="{{ url_for('static', filename='powerbi/customer_dashboard/Overview.png') }}"
+     data-images='[
+     "{{ url_for('static', filename='powerbi/customer_dashboard/Overview.png') }}",
+     "{{ url_for('static', filename='powerbi/customer_dashboard/Tickets.png') }}",
+     "{{ url_for('static', filename='powerbi/customer_dashboard/ML_Performance.png') }}",
+     "{{ url_for('static', filename='powerbi/customer_dashboard/Data_Health.png') }}",
+     "{{ url_for('static', filename='powerbi/customer_dashboard/Prediction.png') }}",
+     "{{ url_for('static', filename='powerbi/customer_dashboard/Voice_of_Customer.png') }}"
+     ]'
+     onclick="openGallery(this)"
+     class="w-full h-40 object-cover rounded-lg cursor-pointer hover:scale-105 transition">
+
+<p class="text-sm mt-2 text-gray-500">Click to view full dashboard</p>
+</div>
+
+<!-- NETFLIX -->
+<div class="bg-white p-4 rounded-xl shadow text-center">
+<h3 class="font-semibold mb-2">Netflix Dashboard</h3>
+
+<img src="{{ url_for('static', filename='powerbi/netflix_dashboard/Netflix_dashboard.png') }}"
+     data-images='[
+     "{{ url_for('static', filename='powerbi/netflix_dashboard/Netflix_dashboard.png') }}"
+     ]'
+     onclick="openGallery(this)"
+     class="w-full h-40 object-cover rounded-lg cursor-pointer hover:scale-105 transition">
+
+</div>
+
+<!-- UBER -->
+<div class="bg-white p-4 rounded-xl shadow text-center">
+<h3 class="font-semibold mb-2">Uber Dashboard</h3>
+
+<img src="{{ url_for('static', filename='powerbi/uber_dashboard/1_Overview.png') }}"
+     data-images='[
+     "{{ url_for('static', filename='powerbi/uber_dashboard/1_Overview.png') }}",
+     "{{ url_for('static', filename='powerbi/uber_dashboard/2_Base_Analysis.png') }}",
+     "{{ url_for('static', filename='powerbi/uber_dashboard/3_Prediction.png') }}"
+     ]'
+     onclick="openGallery(this)"
+     class="w-full h-40 object-cover rounded-lg cursor-pointer hover:scale-105 transition">
+
+</div>
+
+</div>
+
+<!-- ================= TABLEAU ================= -->
+<h2 class="text-xl font-semibold text-center mt-12 mb-6">Tableau Dashboards</h2>
+
+<div class="grid md:grid-cols-3 gap-6">
+
+<!-- DATA JOB -->
+<div class="bg-white p-4 rounded-xl shadow text-center">
+<h3 class="font-semibold mb-2">Data Job Analysis</h3>
+
+<img src="{{ url_for('static', filename='tableau/data_job_analysis/Overview.png') }}"
+     data-images='[
+     "{{ url_for('static', filename='tableau/data_job_analysis/Overview.png') }}",
+     "{{ url_for('static', filename='tableau/data_job_analysis/Salary_Prediction.png') }}",
+     "{{ url_for('static', filename='tableau/data_job_analysis/Map.png') }}"
+     ]'
+     onclick="openGallery(this)"
+     class="w-full h-40 object-cover rounded-lg cursor-pointer hover:scale-105 transition">
+
+</div>
+
+<!-- LAPTOP -->
+<div class="bg-white p-4 rounded-xl shadow text-center">
+<h3 class="font-semibold mb-2">Laptop Analysis</h3>
+
+<img src="{{ url_for('static', filename='tableau/laptop_analysis/Overview.png') }}"
+     data-images='[
+     "{{ url_for('static', filename='tableau/laptop_analysis/Overview.png') }}",
+     "{{ url_for('static', filename='tableau/laptop_analysis/Hardware_Analysis.png') }}",
+     "{{ url_for('static', filename='tableau/laptop_analysis/Price_Insights.png') }}"
+     ]'
+     onclick="openGallery(this)"
+     class="w-full h-40 object-cover rounded-lg cursor-pointer hover:scale-105 transition">
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ================= MODAL ================= -->
+<div id="modal" class="fixed inset-0 bg-black bg-opacity-90 hidden items-center justify-center z-50">
+
+<button onclick="prevImage()" class="absolute left-5 text-white text-3xl">❮</button>
+
+<img id="modalImg" class="max-h-[90%] max-w-[90%] rounded-lg shadow-lg">
+
+<button onclick="nextImage()" class="absolute right-5 text-white text-3xl">❯</button>
+
+</div>
+
+<script>
+let images = [];
+let currentIndex = 0;
+
+function openGallery(element) {
+    images = JSON.parse(element.dataset.images);
+    currentIndex = 0;
+    document.getElementById("modalImg").src = images[currentIndex];
+    document.getElementById("modal").classList.remove("hidden");
+    document.getElementById("modal").classList.add("flex");
+}
+
+function nextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    document.getElementById("modalImg").src = images[currentIndex];
+}
+
+function prevImage() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    document.getElementById("modalImg").src = images[currentIndex];
+}
+
+document.getElementById("modal").onclick = function (e) {
+    if (e.target.id === "modal") {
+        this.classList.add("hidden");
+    }
+};
+</script>
+
+</body>
+</html>
+
+

@@ -1,71 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Certificates | Aparna Patel</title>
-
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+<title>Certificates</title>
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-gray-50">
 
 <!-- NAVBAR -->
-
-<nav class="navbar">
-<div class="nav-content">
-<a href="/" class="nav-logo">APARNA</a>
-
-<div class="nav-links">
+<div class="bg-white shadow p-4 flex justify-between">
+<h1 class="font-bold">Aparna</h1>
+<div class="space-x-4">
 <a href="/">Home</a>
 <a href="/projects">Projects</a>
 <a href="/certificates">Certificates</a>
-<a href="/#contact">Contact</a>
+</div>
 </div>
 
-</div>
-</nav>
+<h1 class="text-3xl font-bold text-center my-10">Certificates</h1>
 
+<div class="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
 
-<!-- CERTIFICATES -->
+<img src="{{ url_for('static', filename='certificates/tech_vidyan.jpg') }}" class="rounded-xl shadow hover:scale-105 transition">
 
-<section class="section-container">
+<img src="{{ url_for('static', filename='certificates/python_ai.jpg') }}" class="rounded-xl shadow hover:scale-105 transition">
 
-<h1 class="section-title">My Certificates</h1>
+<img src="{{ url_for('static', filename='certificates/excel_ai.jpg') }}" class="rounded-xl shadow hover:scale-105 transition">
 
-<div class="cert-grid">
+<img src="{{ url_for('static', filename='certificates/internship_certificate.jpg') }}" class="rounded-xl shadow hover:scale-105 transition">
 
-<!-- TechVidyan -->
-<div class="cert-item">
-<img src="{{ url_for('static', filename='certificates/tech_vidyan.jpg') }}">
-<p>Python Programming – TechVidyan</p>
-</div>
-
-<!-- Python AI -->
-<div class="cert-item">
-<img src="{{ url_for('static', filename='certificates/python_ai.jpg') }}">
-<p>Python Using AI – AI for Techies</p>
-</div>
-
-<!-- Excel AI -->
-<div class="cert-item">
-<img src="{{ url_for('static', filename='certificates/excel_ai.jpg') }}">
-<p>Excel Using AI Workshop</p>
-</div>
-
-<!-- Internship -->
-<div class="cert-item">
-<img src="{{ url_for('static', filename='certificates/internship_certificate.jpg') }}">
-<p>Data Analyst Internship – Unified Mentor</p>
-</div>
+<img src="{{ url_for('static', filename='certificates/AI_Tools.jpg') }}" class="rounded-xl shadow hover:scale-105 transition">
 
 </div>
-
-</section>
 
 </body>
 </html>

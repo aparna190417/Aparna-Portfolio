@@ -1,82 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Internship | Aparna Patel</title>
-
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+<title>Internship</title>
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-gray-50">
 
-<!-- NAVBAR -->
-
-<nav class="navbar">
-<div class="nav-content">
-<a href="/" class="nav-logo">APARNA</a>
-
-<div class="nav-links">
+<div class="bg-white shadow p-4 flex justify-between">
+<h1 class="font-bold">Aparna</h1>
+<div class="space-x-4">
 <a href="/">Home</a>
 <a href="/projects">Projects</a>
 <a href="/certificates">Certificates</a>
-<a href="/#contact">Contact</a>
+</div>
 </div>
 
-</div>
-</nav>
+<section class="max-w-4xl mx-auto p-6">
 
+<h1 class="text-3xl font-bold mb-6">Internship</h1>
 
-<!-- INTERNSHIP SECTION -->
+<div class="bg-white p-6 rounded-xl shadow">
 
-<section class="section-container">
+<h3 class="text-xl font-semibold">Unified Mentor</h3>
 
-<h1 class="section-title">Data Analyst Internship</h1>
-
-<div class="project-card">
-
-<h3>Unified Mentor Internship</h3>
-
-<p>
-Completed a 3-month internship as a Data Analyst Intern at Unified Mentor.
-Worked on real-world datasets and developed analytical insights using Python and BI tools.
+<p class="mt-3 text-gray-600">
+Worked as Data Analyst Intern using Python & Power BI.
 </p>
 
-<ul>
-
-<li>Performed data cleaning and preprocessing using Pandas</li>
-
-<li>Conducted Exploratory Data Analysis (EDA)</li>
-
-<li>Built dashboards using Power BI and Tableau</li>
-
-<li>Worked with machine learning models for predictions</li>
-
-<li>Generated insights for business decision-making</li>
-
-</ul>
-
-</div>
-
-
-<div class="project-card">
-
-<h3>Key Skills Gained</h3>
-
-<p>
-Python • Data Analysis • Machine Learning • Power BI • Tableau • SQL • Data Visualization
-</p>
-
-</div>
-
-
-<div class="buttons" style="text-align:center; margin-top:20px;">
-
-<a href="{{ url_for('static', filename='certificates/internship_certificate.jpg') }}" target="_blank" class="btn">
+<a href="{{ url_for('static', filename='certificates/internship_certificate.jpg') }}"
+class="text-blue-600 mt-4 inline-block">
 View Certificate
 </a>
 

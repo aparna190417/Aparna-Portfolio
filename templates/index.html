@@ -1,192 +1,656 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Aparna Patel | Data Analyst Portfolio</title>
-
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Aparna Patel | Python Developer &amp; Data Analyst</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary-container": "#54647a",
+                      "tertiary": "#4a4d4f",
+                      "surface-container-highest": "#dae2fd",
+                      "surface-container-high": "#e2e7ff",
+                      "on-secondary-fixed-variant": "#38485d",
+                      "secondary-fixed-dim": "#b7c8e1",
+                      "surface-tint": "#364be1",
+                      "surface-container": "#eaedff",
+                      "secondary-fixed": "#d3e4fe",
+                      "inverse-on-surface": "#eef0ff",
+                      "on-error": "#ffffff",
+                      "on-tertiary-fixed-variant": "#444749",
+                      "on-surface": "#131b2e",
+                      "on-tertiary-fixed": "#191c1e",
+                      "on-primary-container": "#dfe0ff",
+                      "on-error-container": "#93000a",
+                      "primary-fixed": "#dfe0ff",
+                      "on-secondary": "#ffffff",
+                      "primary-container": "#3e52e8",
+                      "on-surface-variant": "#444655",
+                      "on-primary": "#ffffff",
+                      "outline": "#757687",
+                      "primary-fixed-dim": "#bcc2ff",
+                      "on-tertiary-container": "#e0e3e5",
+                      "on-primary-fixed-variant": "#132cca",
+                      "on-background": "#131b2e",
+                      "tertiary-fixed-dim": "#c4c7c9",
+                      "tertiary-container": "#626567",
+                      "secondary": "#505f76",
+                      "surface": "#faf8ff",
+                      "surface-dim": "#d2d9f4",
+                      "outline-variant": "#c5c5d8",
+                      "on-primary-fixed": "#000b62",
+                      "inverse-surface": "#283044",
+                      "on-tertiary": "#ffffff",
+                      "error": "#ba1a1a",
+                      "surface-container-lowest": "#ffffff",
+                      "secondary-container": "#d0e1fb",
+                      "background": "#faf8ff",
+                      "surface-variant": "#dae2fd",
+                      "primary": "#1e35d0",
+                      "surface-container-low": "#f2f3ff",
+                      "on-secondary-fixed": "#0b1c30",
+                      "inverse-primary": "#bcc2ff",
+                      "surface-bright": "#faf8ff",
+                      "error-container": "#ffdad6",
+                      "tertiary-fixed": "#e0e3e5"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin_page": "40px",
+                      "container_max_width": "1440px",
+                      "card_padding": "24px",
+                      "inner_card_padding": "16px",
+                      "gutter": "24px",
+                      "sidebar_width": "260px",
+                      "unit": "4px"
+              },
+              "fontFamily": {
+                      "label-caps": ["Inter"],
+                      "body-lg": ["Inter"],
+                      "body-sm": ["Inter"],
+                      "h2": ["Inter"],
+                      "h1": ["Inter"]
+              },
+              "fontSize": {
+                      "label-caps": ["11px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                      "body-lg": ["16px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                      "body-sm": ["14px", {"lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400"}],
+                      "h2": ["24px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                      "h1": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        .aero-shadow {
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
+        }
+        .sub-card {
+            background: #F8FAFC;
+            border: 1px solid #E2E8F0;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
 </head>
-
-<body>
-
-<!-- NAVBAR -->
-
-<nav class="navbar">
-<div class="nav-content">
-<a href="/" class="nav-logo">APARNA</a>
-
-<div class="nav-links">
-<a href="/">Home</a>
-<a href="/projects">Projects</a>
-<a href="/certificates">Certificates</a>
-<a href="#contact">Contact</a>
+<body class="bg-background font-body-lg text-on-background selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="sticky top-0 w-full z-50 glass-panel border-b border-slate-200/50 shadow-sm">
+<nav class="max-w-7xl mx-auto flex items-center justify-between px-8 h-16">
+<span class="text-lg font-bold text-slate-900 font-h2 tracking-tight">Aparna Patel</span>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 hover:text-[#3E52E8] transition-colors font-body-sm font-medium" href="#about">About</a>
+<a class="text-slate-600 hover:text-[#3E52E8] transition-colors font-body-sm font-medium" href="#experience">Experience</a>
+<a class="text-slate-600 hover:text-[#3E52E8] transition-colors font-body-sm font-medium" href="#projects">Projects</a>
+<a class="text-slate-600 hover:text-[#3E52E8] transition-colors font-body-sm font-medium" href="#contact">Contact</a>
 </div>
-
-</div>
-</nav>
-
-
-<!-- HERO SECTION -->
-
-<header class="section-container hero">
-
-<img src="{{ url_for('static', filename='profile.jpg') }}" class="profile-pic">
-
-<h1>Hello, I'm Aparna Patel 👋</h1>
-
-<p class="tagline">Python Developer | Data Analyst</p>
-
-
-<div class="tech-stack">
-<h3>My Tech Stack</h3>
-
-<div class="skill-pills">
-<span class="pill">Python</span>
-<span class="pill">Pandas</span>
-<span class="pill">Scikit-learn</span>
-<span class="pill">Power BI</span>
-<span class="pill">Tableau</span>
-<span class="pill">Flask</span>
-<span class="pill">SQL</span>
-</div>
-</div>
-
-
-<div class="buttons">
-
-<a href="/projects" class="btn">View My Work</a>
-
-<a href="{{ url_for('static', filename='Aparna_Resume.pdf') }}" target="_blank" class="btn outline">
-View Resume
+<a href="{{ url_for('static', filename='Aparna_Patel_Resume.pdf') }}" 
+   target="_blank"
+   class="bg-primary-container text-on-primary px-5 py-2 rounded-lg font-medium text-body-sm hover:opacity-90 transition-all active:scale-95 shadow-lg shadow-primary-container/20 inline-block">
+   Resume
 </a>
 
-<a href="{{ url_for('static', filename='Aparna_Resume.pdf') }}" download class="btn">
+</nav>
+</header>
+<main class="max-w-7xl mx-auto px-8 py-12 md:py-24 space-y-32">
+<!-- Hero Section -->
+<section class="flex flex-col items-center text-center gap-8 max-w-4xl mx-auto">
+<div class="relative w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white shadow-2xl hover:scale-105 transition duration-300">
+    <img class="w-full h-full object-cover"
+         src="{{ url_for('static', filename='profile.jpg') }}">
+</div>
+<div class="space-y-4">
+<h1 class="font-h1 text-5xl md:text-6xl tracking-tight text-on-surface">Aparna Patel</h1>
+<p class="text-[#3E52E8] font-h2 text-xl md:text-2xl font-semibold">Data Analyst • Python Developer • AI-Driven Insights</p>
+<p class="text-on-surface-variant text-lg md:text-xl max-w-2xl leading-relaxed">
+                    <p class="text-on-surface-variant text-lg">
+Transforming complex data into intelligent, scalable solutions that drive measurable business impact and innovation.</p>
+
+</div>
+
+<div class="flex gap-4">
+  <!-- Hire Me -->
+  <a href="#contact"
+     class="bg-primary text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-300">
+     🚀 Hire Me
+  </a>    
+<a class="bg-primary text-on-primary px-8 py-3 rounded-lg font-semibold hover:bg-primary-container transition-colors aero-shadow" href="#projects">
+    View Projects</a>
+<a href="{{ url_for('static', filename='Aparna_Patel_Resume.pdf') }}" 
+   download
+   class="bg-primary text-on-primary px-8 py-3 rounded-lg font-semibold hover:bg-primary-container transition-colors aero-shadow">
 Download Resume
 </a>
+</div>
+</section>
+<!-- About Me Section -->
+<section class="grid md:grid-cols-2 gap-12 items-center" id="about">
+<div class="space-y-6">
+<h2 class="font-h1 text-on-surface">ABOUT ME</h2>
+<div class="space-y-4 text-on-surface-variant leading-relaxed">
+<p>Data Analyst & Python Developer with
+hands-on experience in transforming
+raw data into actionable business
+insights. Skilled in SQL, Excel, Python,
+and Power BI to analyze trends, identify
+opportunities, and support data-driven
+decision-making. Experienced in building
+data-driven applications and dashboards
+that focus on key business metrics.</p>
+<p>Strong in data cleaning, exploratory data
+analysis, and uncovering patterns from
+real-world datasets. Passionate about
+connecting data with business impact
+and leveraging Python to build scalable,
+insight-driven solutions.</p>
+</div>
+<div class="flex gap-8 pt-4">
+<div class="flex flex-col">
+<span class="font-h1 text-primary">SQL</span>
+<span class="text-label-caps text-on-secondary-container">PROFICIENCY</span>
+</div>
+<div class="flex flex-col">
+<span class="font-h1 text-primary">EXCEL</span>
+<span class="text-label-caps text-on-secondary-container">ADVANCED</span>
+</div>
+<div class="flex flex-col">
+<span class="font-h1 text-primary">BI</span>
+<span class="text-label-caps text-on-secondary-container">ANALYTICS</span>
+</div>
+</div>
+</div>
+<div class="bg-white p-8 rounded-xl border border-slate-200 aero-shadow">
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg bg-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="terminal">terminal</span>
+</div>
+<div>
+<h3 class="font-h2 text-lg">Python Automation</h3>
+<p class="text-sm text-on-surface-variant">
+Automated real-world workflows using Python, including data processing, file handling, and task scheduling. Built multiple automation tools to reduce manual effort and improve efficiency.
+</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-[#3E52E8]" data-icon="query_stats">query_stats</span>
+</div>
+<div>
+<h3 class="font-h2 text-lg">Statistical Analysis</h3>
+<p class="text-sm text-on-surface-variant">
+Performed exploratory data analysis (EDA) and statistical modeling using Pandas, NumPy, and Scikit-learn to uncover patterns, trends, and actionable insights from real-world datasets.
+</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg bg-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="dashboard_customize">dashboard_customize</span>
+</div>
+<div>
+<h3 class="font-h2 text-lg">Visual Dashboards</h3>
+<p class="text-sm text-on-surface-variant">
+Designed interactive dashboards using Power BI and Tableau to visualize business metrics, customer behavior, and performance trends for data-driven decision making.
+</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Proficiency Grid -->
+<section class="space-y-12">
+<div class="text-center space-y-4">
+<h2 class="font-h1 text-on-surface">Technical Proficiency</h2>
+<p class="text-on-surface-variant">A comprehensive stack designed for end-to-end data processing.</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Languages -->
+<div class="sub-card p-6 rounded-xl space-y-4">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="code">code</span>
+<h3 class="font-h2 text-lg">Languages</h3>
+<ul class="space-y-2 text-on-surface-variant text-sm">
+<li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> Python (Advanced)</li>
+<li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> SQL (PostgreSQL/MySQL)</li>
+<li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> JavaScript (Basic)</li>
+<li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> HTML & CSS</li>
+</ul>
+</div>
+<!-- Data Analytics -->
+<div class="sub-card p-6 rounded-xl space-y-4">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="science">science</span>
+<h3 class="font-h2 text-lg">Data Analytics</h3>
+<ul class="space-y-2 text-on-surface-variant text-sm">
+<li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> Pandas &amp; NumPy</li>
+<li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> Exploratory Data Analysis (EDA)</li>
+<li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> Scikit-learn (ML)</li>
+<li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> Data Cleaning &amp; Preprocessing</li>
+<li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> Statistical Analysis</li>
+</ul>
+</div>
+<!-- Visualization -->
+<div class="sub-card p-6 rounded-xl space-y-4">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="monitoring">monitoring</span>
+<h3 class="font-h2 text-lg">Visualization</h3>
+<ul class="space-y-2 text-on-surface-variant text-sm">
+<li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> Power BI &amp; Tableau</li>
+<li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> Matplotlib &amp; Seaborn</li>
+<li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> Data Storytelling</li>
+<li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> KPI Reporting</li>
+</ul>
+</div>
+<!-- Tools -->
+<div class="sub-card p-6 rounded-xl space-y-4">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="construction">construction</span>
+<h3 class="font-h2 text-lg">Tools</h3>
+<ul class="space-y-2 text-on-surface-variant text-sm">
+<li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> Git &amp; Docker</li>
+<li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> Excel (Advanced + VBA)</li>
+<li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> AWS (Basic)</li>
+<li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> Streamlit (Web Apps)</li>
+<li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> Jupyter Notebook</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Featured Projects: Bento Grid -->
+<section class="space-y-12" id="projects">
+<div class="flex justify-between items-end">
+<div class="space-y-2">
+<h2 class="font-h1 text-on-surface">Featured Projects</h2>
+<p class="text-on-surface-variant">Aura Analytics (Streamlit Web App)</br>
+    Featured work in AI-driven analysis and automation.</p>
+</div>
+<a class="text-primary font-semibold flex items-center gap-2 hover:underline" href="https://aura-analytics-ugzamtjafnjz7wlx35bxza.streamlit.app/" 
+   target="_blank">
+                    Live Demo <span class="material-symbols-outlined text-sm" data-icon="open_in_new">open_in_new</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Project 1: Large Bento -->
+<div class="md:col-span-2 bg-white rounded-2xl border border-slate-200 overflow-hidden aero-shadow group">
+<div class="h-64 bg-primary-fixed overflow-hidden">
+<div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary-container to-[#3E52E8] text-white p-12">
+<div class="text-center space-y-4">
+<span class="material-symbols-outlined text-6xl" data-icon="data_exploration">data_exploration</span>
+<h3 class="font-h1 text-2xl">Aura Analytics Web App</h3>
+</div>
+</div>
+</div>
+<div class="p-8 space-y-4">
+<div class="flex gap-2">
+<span class="px-3 py-1 bg-surface-container rounded-full text-xs font-bold text-primary">STREAMLIT</span>
+<span class="px-3 py-1 bg-surface-container rounded-full text-xs font-bold text-primary">PYTHON</span>
+<span class="px-3 py-1 bg-surface-container rounded-full text-xs font-bold text-primary">AI</span>
+</div>
+<h3 class="font-h2 text-xl">AI-Powered Data Analysis</h3>
+<p class="text-on-surface-variant">A robust Streamlit application that automates exploratory data analysis and provides AI-driven narrative insights from CSV/Excel datasets.</p>
+<a href="https://github.com/aparna190417/Aura-Analytics" 
+   target="_blank"
+   class="px-4 py-2 border border-slate-100 rounded-lg text-sm font-semibold hover:bg-slate-30">
+   View Code
+</a>
+</div>
+</div>
+<!-- Project 2: Small Bento -->
+<div class="bg-white rounded-2xl border border-slate-200 overflow-hidden aero-shadow flex flex-col">
+<div class="h-40 bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-on-secondary-container" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div class="space-y-2">
+<h3 class="font-h2 text-lg">LinkedIn Automation</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Python-based bot for managing professional networking tasks with intelligent throttling.</p>
+</div>
+<div class="pt-4 flex gap-2">
+<span class="px-2 py-1 bg-slate-100 rounded text-[10px] font-bold text-slate-500">SELENIUM</span>
+<span class="px-2 py-1 bg-slate-100 rounded text-[10px] font-bold text-slate-500">PYTHON</span>
+</div>
+</div>
+</div>
+<!-- Project 3: Small Bento -->
+<div class="bg-white rounded-2xl border border-slate-200 overflow-hidden aero-shadow flex flex-col">
+<div class="h-40 bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="audio_file">audio_file</span>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div class="space-y-2">
+<h3 class="font-h2 text-lg">Video to Audio Converter</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Efficient GUI tool for batch processing multimedia files with high fidelity output.</p>
+</div>
+<div class="pt-4 flex gap-2">
+<span class="px-2 py-1 bg-slate-100 rounded text-[10px] font-bold text-slate-500">TKINTER</span>
+<span class="px-2 py-1 bg-slate-100 rounded text-[10px] font-bold text-slate-500">FFMPEG</span>
+</div>
+</div>
+</div>
+<!-- Project 4: Wide Bento -->
+<div class="md:col-span-2 bg-white rounded-2xl border border-slate-200 p-8 aero-shadow flex flex-col md:flex-row gap-8 items-center">
+<div class="w-full md:w-1/3 bg-slate-50 rounded-xl p-4 border border-slate-100">
+<div class="aspect-square bg-white rounded shadow-inner flex items-center justify-center">
+<span class="material-symbols-outlined text-5xl text-primary" data-icon="dashboard">dashboard</span>
+</div>
+</div>
+<div class="w-full md:w-2/3 space-y-4">
+<h3 class="font-h2 text-xl">Interactive Business Dashboards</h3>
+<p class="text-on-surface-variant">Developed executive-level Power BI and Tableau dashboards visualizing sales performance, customer churn, and supply chain efficiency.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 border border-slate-200 rounded-lg text-xs font-medium text-slate-600">Power BI</span>
+<span class="px-3 py-1 border border-slate-200 rounded-lg text-xs font-medium text-slate-600">DAX</span>
+<span class="px-3 py-1 border border-slate-200 rounded-lg text-xs font-medium text-slate-600">ETL</span>
+<span class="px-3 py-1 border border-slate-200 rounded-lg text-xs font-medium text-slate-600">Tableau</span>
+</div>
+<a href="/projects"
+   class="inline-block mt-4 text-primary font-semibold hover:underline flex items-center gap-2">
+   View Full Dashboard 
+   <span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Professional Journey (Experience) -->
+<section class="space-y-12" id="experience">
+<div class="text-center space-y-4">
+<h2 class="font-h1 text-on-surface">Professional Journey</h2>
+<p class="text-on-surface-variant">A timeline of growth and technical contributions.</p>
+</div>
+<div class="relative max-w-4xl mx-auto pl-8 border-l-2 border-slate-200 space-y-12">
+<!-- Experience Item 1 -->
+<div class="relative">
+<div class="absolute -left-[41px] top-0 w-4 h-4 rounded-full bg-primary border-4 border-white shadow-sm"></div>
+<div class="bg-white p-8 rounded-xl border border-slate-200 aero-shadow space-y-3">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-h2 text-xl">Data Analyst Intern</h3>
+<p class="text-primary font-medium">Unified Mentor</p>
+</div>
+<span class="text-xs font-bold text-on-secondary-container bg-surface-container px-3 py-1 rounded-full">JAN 2026 - APR 2026</span>
+</div>
+<p class="text-on-surface-variant leading-relaxed">
+                            Worked on data analysis using Python, Excel, Power BI, and Tableau.
+                            Built interactive dashboards using Power BI and Tableau to visualize trends and key business insights.
+                            Performed data cleaning, preprocessing, and exploratory data analysis (EDA) using Python libraries.
+                            Generated insights from datasets to support data-driven decisionmaking.</p>
+<div class="flex gap-2">
+<span class="text-xs text-slate-400">#Python</span>
+<span class="text-xs text-slate-400">#Excel</span>
+<span class="text-xs text-slate-400">#PowerBI</span>
+<span class="text-xs text-slate-400">#Tableau</span>
+<span class="text-xs text-slate-400">#DataMining</span>
+<span class="text-xs text-slate-400">#DataAnalysis</span>
+<span class="text-xs text-slate-400">#Scikit-learn</span>
+</div>
+</div>
+</div>
+<!-- Experience Item 2 -->
+<div class="relative">
+<div class="absolute -left-[41px] top-0 w-4 h-4 rounded-full bg-slate-300 border-4 border-white shadow-sm"></div>
+<div class="bg-white p-8 rounded-xl border border-slate-200 aero-shadow space-y-3">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-h2 text-xl">Python Development Course</h3>
+<p class="text-primary font-medium">TechVidvan</p>
+</div>
+<span class="text-xs font-bold text-on-secondary-container bg-surface-container px-3 py-1 rounded-full">2025</span>
+</div>
+<p class="text-on-surface-variant leading-relaxed">
+                            Completed multiple practical Python projects during TechVidvan Python Programming training,
+gaining hands-on experience in automation, GUI applications, and problem-solving with Python. 
+Developed a strong foundation in Python programming concepts, libraries, and best practices through real-world project work.</p>
+<div class="flex gap-2">
+<span class="text-xs text-slate-400">#Automation</span>
+<span class="text-xs text-slate-400">#GUI</span>
+<span class="text-xs text-slate-400">#APIs</span>
+</div>
+</div>
+</div>
+</div>
+</section>
 
+<!-- Certifications -->
+<section class="space-y-12">
+
+<h2 class="font-h1 text-center text-on-surface">Verified Credentials</h2>
+
+<div class="grid md:grid-cols-4 gap-6">
+
+<!-- 1 -->
+<a href="{{ url_for('static', filename='certificates/tech_vidvan.jpg') }}" target="_blank"
+class="bg-white p-6 rounded-xl border border-slate-100 aero-shadow text-center space-y-4 hover:scale-105 transition block">
+
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
+<span class="material-symbols-outlined text-primary">verified</span>
 </div>
 
-</header>
+<h4 class="font-h2 text-sm">Python Programming</h4>
+<p class="text-xs text-slate-500">TechVidvan (2025)</p>
 
+</a>
 
-<!-- PROJECTS SECTION -->
+<!-- 2 -->
+<a href="{{ url_for('static', filename='certificates/python_ai.jpg') }}" target="_blank"
+class="bg-white p-6 rounded-xl border border-slate-100 aero-shadow text-center space-y-4 hover:scale-105 transition block">
 
-<section class="section-container">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
+<span class="material-symbols-outlined text-primary">psychology</span>
+</div>
 
-<h2 class="section-title">Featured Projects</h2>
+<h4 class="font-h2 text-sm">Python AI Workshop</h4>
+<p class="text-xs text-slate-500">AI for Techies (2025)</p>
 
-<div class="project-grid">
+</a>
 
-<div class="project-card">
+<!-- 3 -->
+<a href="{{ url_for('static', filename='certificates/Excel_ai.jpg') }}" target="_blank"
+class="bg-white p-6 rounded-xl border border-slate-100 aero-shadow text-center space-y-4 hover:scale-105 transition block">
 
-<h3>Customer Satisfaction Prediction</h3>
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
+<span class="material-symbols-outlined text-primary">finance_mode</span>
+</div>
 
-<p>
-Machine Learning model to predict customer satisfaction
-based on feedback and service data.
-</p>
+<h4 class="font-h2 text-sm">Excel AI Workshop</h4>
+<p class="text-xs text-slate-500">Be10x (2026)</p>
 
-<a href="https://github.com/aparna190417" target="_blank">
-View Code →
+</a>
+
+<!-- 4 -->
+<a href="{{ url_for('static', filename='certificates/internship_certificate.jpg') }}" target="_blank"
+class="bg-white p-6 rounded-xl border border-slate-100 aero-shadow text-center space-y-4 hover:scale-105 transition block">
+
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
+<span class="material-symbols-outlined text-primary">badge</span>
+</div>
+
+<h4 class="font-h2 text-sm">Data Analyst Internship</h4>
+<p class="text-xs text-slate-500">Unified Mentor (2026)</p>
+
+</a>
+
+<!-- 5 -->
+<a href="{{ url_for('static', filename='certificates/AI_Tools.jpg') }}" target="_blank"
+class="bg-white p-6 rounded-xl border border-slate-100 aero-shadow text-center space-y-4 hover:scale-105 transition block">
+
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
+<span class="material-symbols-outlined text-primary">smart_toy</span>
+</div>
+
+<h4 class="font-h2 text-sm">AI Tools & ChatGPT Workshop</h4>
+<p class="text-xs text-slate-500">Be10x (2026)</p>
+
 </a>
 
 </div>
 
+</section>
+<!--SUCCESS POPUP-->
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <div class="fixed top-5 right-5 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg">
+      {{ messages[0] }}
+    </div>
+  {% endif %}
+{% endwith %}
 
-<div class="project-card">
+<!-- Contact Section -->
+<section class="bg-white rounded-3xl border border-slate-200 aero-shadow overflow-hidden" id="contact">
 
-<h3>Netflix Data Analysis</h3>
+<div class="grid md:grid-cols-2 items-center">
 
-<p>
-EDA on Netflix dataset using Python, Pandas,
-Matplotlib and Seaborn.
+<!-- LEFT SIDE -->
+<div class="p-8 md:p-16 space-y-8">
+
+<div class="space-y-4">
+<h2 class="text-3xl font-bold text-slate-900">Get in Touch</h2>
+<p class="text-slate-500">
+Looking for a precision-focused Data Analyst or Python Developer? Let's discuss how I can help your team.
 </p>
-
-<img src="{{ url_for('static', filename='powerbi/netflix_dashboard/Netflix_dashboard.png') }}" class="dashboard-preview">
-
 </div>
 
+<div class="space-y-6">
+
+<!-- EMAIL -->
+<a href="mailto:appuappi90417@gmail.com"
+   class="flex items-center gap-4 group">
+
+<div class="w-10 h-10 rounded-lg bg-slate-100 flex items-center justify-center group-hover:bg-blue-100 transition">
+<span class="material-symbols-outlined text-slate-600 group-hover:text-blue-600">mail</span>
 </div>
 
-</section>
+<span class="font-medium text-slate-700 group-hover:text-blue-600">
+appuappi90417@gmail.com
+</span>
 
-
-<!-- CERTIFICATES SECTION -->
-
-<section class="section-container">
-
-<h2 class="section-title">Certificates</h2>
-
-<div class="cert-grid">
-
-
-<div class="cert-item">
-<img src="{{ url_for('static', filename='certificates/tech_vidyan.jpg') }}">
-<p>Python Programming – TechVidyan</p>
-</div>
-
-
-<div class="cert-item">
-<img src="{{ url_for('static', filename='certificates/python_ai.jpg') }}">
-<p>Python Using AI – AI for Techies</p>
-</div>
-
-
-<div class="cert-item">
-<img src="{{ url_for('static', filename='certificates/excel_ai.jpg') }}">
-<p>Excel Using AI Workshop</p>
-</div>
-
-
-<div class="cert-item">
-<img src="{{ url_for('static', filename='certificates/internship_certificate.jpg') }}">
-<p>Data Analyst Internship – Unified Mentor</p>
-</div>
-
-
-</div>
-
-</section>
-
-
-<!-- CONTACT -->
-
-<section id="contact" class="contact-section">
-
-<h2>Let's Connect</h2>
-
-<div class="contact-container">
-
-<a href="mailto:appuappi190417@gmail.com">
-<i class="fas fa-envelope"></i> Email
 </a>
 
-<a href="https://www.linkedin.com/in/aparna-patel-08a389393" target="_blank">
+<!-- SOCIAL -->
+<div class="flex items-center gap-4">
+
+<div class="w-10 h-10 rounded-lg bg-slate-100 flex items-center justify-center">
+<span class="material-symbols-outlined text-slate-600">link</span>
+</div>
+
+<div class="flex gap-6 text-xl">
+
+<a href="https://www.linkedin.com/in/aparna-patel-08a389393" target="_blank"
+class="text-slate-600 hover:text-blue-600 transition">
 <i class="fab fa-linkedin"></i> LinkedIn
 </a>
 
-<a href="https://github.com/aparna190417" target="_blank">
+<a href="https://github.com/aparna190417" target="_blank"
+class="text-slate-600 hover:text-black transition">
 <i class="fab fa-github"></i> GitHub
 </a>
 
 </div>
 
-<p class="location">
-<i class="fas fa-map-marker-alt"></i> New Delhi, India
-</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- RIGHT SIDE (FORM) -->
+<div class="bg-slate-50 p-8 md:p-16">
+
+<form action="/contact" method="POST" class="space-y-4">
+
+<div>
+<label class="text-sm text-slate-500">Full Name</label>
+<input name="name" class="w-full bg-white border border-slate-200 rounded-lg p-3" type="text" required>
+</div>
+
+<div>
+<label class="text-sm text-slate-500">Email Address</label>
+<input name="email" class="w-full bg-white border border-slate-200 rounded-lg p-3" type="email" required>
+</div>
+
+<div>
+<label class="text-sm text-slate-500">Message</label>
+<textarea name="message" class="w-full bg-white border border-slate-200 rounded-lg p-3" rows="4" required></textarea>
+</div>
+
+<button type="submit"
+class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+Send Message
+</button>
+
+</form>
+
+</div>
 
 </section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 w-full py-12 px-8">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="font-semibold text-slate-900 dark:text-white font-h2">Aparna Patel</span>
+<p class="font-['Inter'] text-sm text-slate-500">© 2024 Aparna Patel • Python Developer &amp; Data Analyst</p>
+</div>
+<div class="flex gap-8">
 
+<a href="https://www.linkedin.com/in/aparna-patel-08a389393" target="_blank"
+class="text-slate-500 hover:text-[#3E52E8] transition-colors duration-200 hover:underline underline-offset-4 text-sm font-medium">
+LinkedIn
+</a>
 
-<!-- FOOTER -->
+<a href="https://github.com/aparna190417" target="_blank"
+class="text-slate-500 hover:text-[#3E52E8] transition-colors duration-200 hover:underline underline-offset-4 text-sm font-medium">
+GitHub
+</a>
 
-<footer class="footer">
-<p>© 2026 Aparna Patel | My Portfolio</p>
+<a href="mailto:appuappi90417@gmail.com"
+class="text-slate-500 hover:text-[#3E52E8] transition-colors duration-200 hover:underline underline-offset-4 text-sm font-medium">
+Email
+</a>
+
+<a href="/blog"
+class="text-slate-500 hover:text-[#3E52E8] transition-colors duration-200 hover:underline underline-offset-4 text-sm font-medium">
+Technical Blog
+</a>
+
+</div>
+</div>
 </footer>
-
-</body>
-</html>
+</body></html>
